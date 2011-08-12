@@ -1,0 +1,40 @@
+// size the blueprint grid here for this media size
+$blueprint-grid-columns: 12;
+$blueprint-container-size: 470px;
+$blueprint-grid-margin: 10px;
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+
+#media-base, #media-768, #media-992, #media-1382  { display: none; }
+#media-480 { display: block; }
+
+#container {
+  @include container;
+  @include showgrid; 
+  margin-top: 6px;  
+}
+header, footer {
+  @include column($blueprint-grid-columns); 
+  background: $orangina;
+  min-height: 36px;  
+}
+header {
+
+}
+// Two thirds of the grid columns, rounding up.
+// With 24 cols, this is 16.
+$content-columns: ceil(2 * $blueprint-grid-columns / 3);
+$sidebar-columns: $blueprint-grid-columns - $content-columns;
+#sidebar {
+  @include column($sidebar-columns);   
+  background: $limon;
+  min-height: 360px;
+}
+#main {
+  // true means it's the last column in the row
+  @include column($content-columns, true); 
+//  background: $limon;    
+  min-height: 360px;
+}
+
+
+/* End main styles */

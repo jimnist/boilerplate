@@ -1,0 +1,29 @@
+
+
+@import "blueprint/debug";
+@import "compass/reset";
+
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+
+// Settings ------------------------------------------------------------------
+
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false !default;
+$legacy-support-for-ie8: false !default;
+$ie: false !default;
+
+
+// Colors --------------------------------------------------------------
+
+$lemon: rgba(255, 255, 204, 0.5);
+$limon: rgba(102, 255, 51, 0.25);
+$orangina: rgba(255, 153, 51, 0.25);
+$lime: $limon;
+
+
+// Fonts --------------------------------------------------------------
+
+
+
+// default styles for all media
+#media-480, #media-768, #media-992, #media-1382  { display: none; }

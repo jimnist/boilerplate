@@ -1,0 +1,18 @@
+/* ie.scss*/
+
+// This is the IE-daddy sheet. 
+// It's the jefe. unless you are not IE or IE >= 9, then screen.scss is the jefe 
+
+// Settings ------------------------------------------------------------------
+
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
+
+$ie: ".ie7 &, .ie8 &";
+
+// Imports -------------------------------------------------------------------
+
+@import "partials/defaults";
+@import "partials/media/768";   // only one size for yous
+
+/* fin */

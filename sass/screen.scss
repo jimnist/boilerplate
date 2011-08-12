@@ -1,0 +1,37 @@
+/* screen.scss*/
+
+/* Paul Irish HTML 5 Boilerplate Port to SASS plus some*/
+
+// This is the daddy sheet.
+// It's the jefe. unless you are ie 7 or 8, then ie.scss is the jefe
+
+@import "blueprint/grid";
+@import "blueprint/buttons";
+
+@import "partials/base";
+
+/* make sure to compile to minified for production */
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/boilerplate/boilerplate-top";  // or boilerplate-top.min
+
+/* 480px ------------------------------- */
+@media only screen and (min-width: 480px)  { @import "partials/media/480"; }     
+                                      
+/* 768px  ------------------------------ */
+@media only screen and (min-width: 768px)  { @import "partials/media/768"; }                                           
+
+/* 992px ------------------------------- */
+@media only screen and (min-width: 992px)  { @import "partials/media/992"; }                                           
+
+/* 1382px ------------------------------- */
+@media only screen and (min-width: 1382px) { @import "partials/media/1382"; }
+
+// 2x ---for Retina displays----------------------------------------------------
+// for Retina displays
+// @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+//   @import media/2x
+
+@import "partials/boilerplate/boilerplate-bottom"; // or boilerplate-bottom.min
+
+/* fin */
